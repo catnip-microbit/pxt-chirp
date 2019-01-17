@@ -1,0 +1,17 @@
+{
+    "name": "pxt-chirp",
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Chirp humidity sensor extension for Micro:bit",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "README.md",
+        "chirp.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "public": true
+}
