@@ -5,8 +5,16 @@ namespace chirp {
     export function getHumidity(): number {
         pins.i2cWriteNumber(32, 0, NumberFormat.Int8LE, false)
         basic.pause(100)
-        let humidity = pins.i2cReadNumber(32, NumberFormat.UInt16BE, true)
-        return humidity
+        return pins.i2cReadNumber(32, NumberFormat.UInt16BE, true)
+    }
+
+
+    //% block="Chirp temperature value"
+    //% blockSetVariable=temperature
+    export function getTemperature(): number {
+        pins.i2cWriteNumber(32, 5, NumberFormat.Int8LE, false)
+        basic.pause(100)
+        return Math.round(pins.i2cReadNumber(32, NumberFormat.UInt16BE, true)/10)
     }
 
 
