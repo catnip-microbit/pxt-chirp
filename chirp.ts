@@ -18,7 +18,7 @@ namespace chirp {
     }
 
     //% block="Chirp light value"
-    //% blockSetVariable=temperature
+    //% blockSetVariable=lightLevel
     export function getLightLevel(): number {
         pins.i2cWriteNumber(32, 3, NumberFormat.Int8BE, true)
         
