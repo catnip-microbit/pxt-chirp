@@ -10,6 +10,10 @@ This extension is an easier access to the ingenious humidity sensor through the 
 
 MIT
 
+## Supported TypeScript methods
+
+All extremely self-explanatory: `chirp.getHumidity()`, `chirp.getTemperature()`, `chirp.getLightLevel()`, `chirp.isDry()`
+
 ## Supported targets
 
 * for PXT/microbit
